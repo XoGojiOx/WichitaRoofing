@@ -191,6 +191,14 @@ img {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 2rem;
   text-align: center;
+  min-height: 300px;
+}
+
+#tab-2-content .tab-2-content-bottom img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  max-height: 200px;
 }
 
 .table {
@@ -277,6 +285,7 @@ img {
 .text-lg {
   font-size: 1.8rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .text-md {
@@ -290,6 +299,27 @@ img {
 
 .text-dark {
   color: #999;
+}
+
+/* For small devices (phones, less than 600px) */
+@media (max-width: 599px) {
+  .text-dark {
+    font-size: 14px;
+  }
+}
+
+/* For medium devices (tablets, 600px and up) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .text-dark {
+    font-size: 18px;
+  }
+}
+
+/* For large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+  .text-dark {
+    font-size: 20px;
+  }
 }
 
 /* Buttons */
