@@ -72,5 +72,28 @@
         </ul>
       </div>
     </footer>
+    <script src="../JS/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all tab items
+        const tabs = document.querySelectorAll(".tab-item");
+        // Get all tab contents
+        const tabContents = document.querySelectorAll(".tab-content-item");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove 'tab-border' class from all tabs
+            tabs.forEach((item) => item.classList.remove("tab-border"));
+            // Hide all tab contents
+            tabContents.forEach((content) => content.classList.remove("show"));
+
+            // Add 'tab-border' class to clicked tab
+            tab.classList.add("tab-border");
+            // Show corresponding tab content
+            document.querySelector(`#${this.id}-content`).classList.add("show");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
