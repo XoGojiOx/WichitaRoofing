@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../CSS/style.css" />
     <title>Wichita's #1 Trusted Roofing Source</title>
   </head>
   <body>
     <header class="showcase">
       <div class="showcase-top">
-        <img src="./wichita-roofing.png" alt="" />
+        <img src="../Pictures/wichita-roofing.png" alt="Wichita" />
         <a href="contact.html" class="btn btn-rounded">Contact Us!</a>
       </div>
       <div class="showcase-content">
@@ -52,7 +52,7 @@
                 >Click Here To Get Started!</a
               >
             </div>
-            <img src="workingRoof.jpg" alt="" />
+            <img src="../Pictures/workingRoof.jpg" alt="" />
           </div>
         </div>
 
@@ -61,28 +61,28 @@
           <div class="tab-2-content-top">
             <p class="text-lg">
               When you submit your information, our team will contact you, set a
-              convient time to meet you, and give you a free quote.
+              convenient time to meet you, and give you a free quote.
             </p>
             <a href="contact.html" class="btn btn-lg">Request A Free Quote</a>
           </div>
           <div class="tab-2-content-bottom">
             <div>
-              <img src="window.jpg" alt="" />
+              <img src="../Pictures/window.jpg" alt="" />
               <p class="text-md">Within 24 hours we will contact you!</p>
               <p class="text-dark">
                 We will meet you on your schedule to give you a free quote!
               </p>
             </div>
             <div>
-              <img src="water_leak.jpg" alt="" />
+              <img src="../Pictures/water_leak.jpg" alt="" />
               <p class="text-md">Have an emergency?</p>
               <p class="text-dark">In the contact form, select Emergency!</p>
             </div>
             <div>
-              <img src="relax.jpg" alt="" />
+              <img src="../Pictures/relax.jpg" alt="" />
               <p class="text-md">Relax!</p>
               <p class="text-dark">
-                Roofing is what we do! You will have a worry free experience and
+                Roofing is what we do! You will have a worry-free experience and
                 enjoy professional quality.
               </p>
             </div>
@@ -93,7 +93,7 @@
         <div id="tab-3-content" class="tab-content-item">
           <div class="text-center">
             <p class="text-lg">
-              Wether you are looking down the road or are needing help right
+              Whether you are looking down the road or are needing help right
               now, we are here to help!
             </p>
             <a href="contact.html" class="btn btn-lg"
@@ -138,6 +138,28 @@
         </ul>
       </div>
     </footer>
-    <script src="./script.js"></script>
+    <script src="../JS/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Get all tab items
+        const tabs = document.querySelectorAll(".tab-item");
+        // Get all tab contents
+        const tabContents = document.querySelectorAll(".tab-content-item");
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", function () {
+            // Remove 'tab-border' class from all tabs
+            tabs.forEach((item) => item.classList.remove("tab-border"));
+            // Hide all tab contents
+            tabContents.forEach((content) => content.classList.remove("show"));
+
+            // Add 'tab-border' class to clicked tab
+            tab.classList.add("tab-border");
+            // Show corresponding tab content
+            document.querySelector(`#${this.id}-content`).classList.add("show");
+          });
+        });
+      });
+    </script>
   </body>
 </html>

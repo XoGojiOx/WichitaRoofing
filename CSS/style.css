@@ -461,13 +461,16 @@ img {
 /* Form Styles */
 .form {
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left;
+  max-width: 500px; /* Increased max-width for larger forms */
+  margin: 0 auto; /* Center form horizontally */
+  text-align: center; /* Center align text and form fields */
 }
 
 .form-group {
   margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align items within form group */
 }
 
 .form-group label {
@@ -480,11 +483,14 @@ img {
 .form-group input,
 .form-group textarea,
 .form-group select {
-  width: 100%;
+  width: 300%; /* Set input fields to be three times as wide as the container */
+  max-width: none; /* Remove previous max-width restriction */
   padding: 0.8rem;
   font-size: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
+  background-color: #ffffff;
   border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding and border are included in the width */
 }
 
 .form-group textarea {
@@ -494,6 +500,7 @@ img {
 .form button {
   display: block;
   width: 100%;
+  max-width: 500px; /* Match button width with form fields */
   padding: 0.8rem;
   font-size: 1.2rem;
   background-color: var(--primary-color);
@@ -501,33 +508,9 @@ img {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin-top: 1rem; /* Space above the button */
 }
 
 .form button:hover {
-  background-color: darken(var(--primary-color), 10%);
-}
-
-.form-group {
-  margin-bottom: 1rem;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 0.5rem;
-  color: #fff;
-}
-
-.form-group input,
-.form-group textarea,
-.form-group select {
-  width: 100%;
-  padding: 0.8rem;
-  border: 1px solid #333;
-  border-radius: 5px;
-  background: #222;
-  color: #fff;
-}
-
-.form-group textarea {
-  resize: vertical;
+  background-color: #c1071f; /* Adjust hover color */
 }
