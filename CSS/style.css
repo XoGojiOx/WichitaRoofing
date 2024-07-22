@@ -514,3 +514,74 @@ img {
 .form button:hover {
   background-color: #c1071f; /* Adjust hover color */
 }
+
+/* Blog Container */
+.blog-container {
+  max-width: 800px; /* Adjust as needed for your layout */
+  margin: 2rem auto; /* Center container and add vertical margin */
+  padding: 1.5rem; /* Add padding inside container */
+  background-color: #fff; /* White background for the blog posts */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Blog Post */
+.blog-post {
+  margin-bottom: 2rem; /* Space between blog posts */
+  padding-bottom: 1.5rem; /* Space below each blog post */
+  border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+/* Blog Title */
+.blog-post h2 {
+  font-size: 2rem; /* Larger font size for titles */
+  color: #333; /* Darker color for readability */
+  margin-bottom: 1rem; /* Space below the title */
+}
+
+/* Blog Date */
+.blog-post .date {
+  font-size: 0.9rem; /* Smaller font size for dates */
+  color: #888; /* Light gray for dates */
+  margin-bottom: 1rem; /* Space below the date */
+}
+
+/* Blog Content */
+.blog-post p {
+  line-height: 1.6; /* Increased line height for readability */
+  margin-bottom: 1.5rem; /* Space below paragraphs */
+  color: #333; /* Darker color for readability */
+}
+
+/* Blog Read More Button */
+.blog-post .read-more {
+  display: inline-block;
+  background-color: var(--primary-color); /* Primary color for button */
+  color: #fff;
+  padding: 0.6rem 1.2rem; /* Padding inside button */
+  font-size: 1rem;
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Remove underline */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+.blog-post .read-more:hover {
+  background-color: #c1071f; /* Darker color on hover */
+}
+
+/* Blog Title for Responsive Layout */
+@media (max-width: 768px) {
+  .blog-post h2 {
+    font-size: 1.6rem; /* Adjust title size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-container {
+    padding: 1rem; /* Adjust padding for smaller screens */
+  }
+
+  .blog-post h2 {
+    font-size: 1.4rem; /* Further adjust title size for very small screens */
+  }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Blog</title>
+  </head>
+  <body>
+    <header class="showcase">
+      <div class="showcase-top">
+        <img src="../Pictures/wichita-roofing.png" alt="Wichita" />
+        <a href="../HTML/index.html" class="btn btn-rounded">Home</a>
+      </div>
+      <div class="showcase-content">
+        <h1>Blog</h1>
+        <p>Stay updated with our latest blog posts</p>
+      </div>
+    </header>
+    <section class="container blog-container" id="blogPosts">
+      <!-- Blog posts will be inserted here dynamically -->
+    </section>
+    <footer class="footer">
+      <p>Questions? Call 1-316-677-7606</p>
+      <div class="footer-cols">
+        <ul>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+        <ul>
+          <li><a href="../HTML/contact.html">Contact Us</a></li>
+        </ul>
+        <ul>
+          <li><a href="../HTML/blog.html">Blog</a></li>
+        </ul>
+        <ul>
+          <li><a href="#">Legal Notices</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const posts = JSON.parse(localStorage.getItem("blogPosts")) || [];
+        const blogPostsContainer = document.getElementById("blogPosts");
+        posts.forEach((post) => {
+          const postElement = document.createElement("div");
+          postElement.className = "blog-post"; // Apply blog-post class
+          postElement.innerHTML = `
+            <h2>${post.title}</h2>
+            <p>${post.content}</p>
+            <a href="#" class="read-more">Read More</a> <!-- Add read-more class -->
+          `;
+          blogPostsContainer.appendChild(postElement);
+        });
+      });
+    </script>
+  </body>
+</html>
