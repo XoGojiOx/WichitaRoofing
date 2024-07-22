@@ -133,6 +133,7 @@ img {
 .tabs p {
   font-size: 1.2rem;
   padding-top: 0.5rem;
+  color: #fff;
 }
 
 .tabs .container > div {
@@ -370,10 +371,6 @@ img {
 @media (max-width: 960px) {
   .showcase {
     height: 70vh;
-  }
-
-  .hide-sm {
-    display: none;
   }
 
   .showcase-top img {
