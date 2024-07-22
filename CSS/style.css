@@ -351,12 +351,16 @@ img {
   font-size: 2rem;
   padding: 1.5rem 2.1rem;
   text-transform: uppercase;
+  background: var(--primary-color); /* Ensure red background */
+  color: #fff; /* White text */
 }
 
 .btn-lg {
   font-size: 1rem;
   padding: 0.8rem 1.3rem;
   text-transform: uppercase;
+  background: var(--primary-color); /* Ensure red background */
+  color: #fff; /* White text */
 }
 
 .btn-icon {
@@ -395,6 +399,8 @@ img {
     font-size: 1.5rem;
     padding: 1.4rem 2rem;
     text-transform: uppercase;
+    background: var(--primary-color); /* Ensure red background */
+    color: #fff; /* White text */
   }
 
   .text-xl {
@@ -449,6 +455,8 @@ img {
     font-size: 1rem;
     padding: 1.2rem 1.6rem;
     text-transform: uppercase;
+    background: var(--primary-color); /* Ensure red background */
+    color: #fff; /* White text */
   }
 }
 
@@ -503,8 +511,8 @@ img {
   max-width: 500px; /* Match button width with form fields */
   padding: 0.8rem;
   font-size: 1.2rem;
-  background-color: var(--primary-color);
-  color: #fff;
+  background-color: var(--primary-color); /* Ensure red background */
+  color: #fff; /* White text */
   border: none;
   border-radius: 5px;
   cursor: pointer;
