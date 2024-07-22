@@ -1,0 +1,6 @@
+I'm learning to code and I'm very interested in Web Development. I'm working on projects and had an idea for a website where I can send leads to businesses for a commission. My goal is to have a good looking website and have SEO good enough to where I'll get some traffic from Google searches. This is a roofing site obviously but can be change to fit any ninche you can think of.
+I'm looking to be able to mass produce these websites and kinda use them as a cookie cutter. Just changing the city names and logos. When I get a lead from a city, I'll reach out to a company I've already picked out and give it to them for free as a trial. After that, I will partner with them and charge $150 to $200 per lead.
+Roofing companiess charge between $5k to $10k on average per roofing job, so my commission is nothing. Their customer acquisition cost for their marketing is already costing them. Why not have someone like me bring them more customers?
+This might be a total fail, but I'm having fun and will continue to work on this until I can get it launched. 
+The mobile view is being a bit tricky for me. This is what I'm currently working on now. 
+I'm also new to all this, so the storing blog post content in the browser..... I'm going to have to read more into this?!
